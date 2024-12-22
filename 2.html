@@ -3,71 +3,63 @@
     <head>
       <title>WEB02 - CSS</title>
       <meta charset="utf-8" />
-      <style>
-        body {
-          background-image: url('Background.jpg');
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          margin: 0;
-          font-family: Arial, sans-serif;
-          color: rgb(158, 213, 210);
-        }
-        body::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(to right, rgba(0,0,0,0.6),rgba(255,255,255,0.2));
-          z-index: -1;
-        }
+<style>
+      body {
+        margin: 0;
+      }
+      .active {
+        color: red;
+      }
+      a {
+        color: black;
+      
+      }
+      h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0;
+      
+      }
+      ol {
+        border-right: 1px solid gray;
+        width: 100px;
+        margin: 0;
+        padding: 20px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol {
+        padding-left: 33px;
+      }
+      #grid #article {
+        padding-left: 25px;
+      }
+    
       </style>
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MFK327RRS6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MFK327RRS6');
 </script>
     </head>
     <body>
-      <h1> <a href="index.html" style="color: white;"> WEB</a></h1>
+      <h1> <a href="index.html" target="_blank"> WEB</a></h1>
       <ol>
-      <li> <a href="1.html" style="color: white;"> HTML</a></li>
-      <li> <a href="2.html" style="color: white;"> CSS</a></li>
-      <li> <a href="3.html" style="color: white;"> JavaScript</a></li>
+      <li> <a href="1.html" target="_blank"> HTML</a></li>
+      <li> <a href="2.html" target="_blank"> CSS</a></li>
+      <li> <a href="3.html"target="_blank"> JavaScript</a></li>
+      <a href="one.html" target="_blank"C>SS2</a>
     </ol>
     <h2>CSS</h2>
-    <!-- <ul>
-  <li>egoing</li>
-  <li>k8885</li>
-  <li>youbin</li>
-  <h1>HTML</h1>
-</ul> -->
     
       <p>
         앞에서 언급했듯이, CSS는 사용자에게 문서를 표시하는 방법을 지정하는 언어입니다 — 스타일, 레이아웃 등.
 
-문서는 일반적으로 마크 업 언어를 사용하여 구성된 텍스트 파일입니다 — HTML 이 가장 일반적인 마크 업 언어이지만, SVG 또는 XML 과 같은 다른 마크 업 언어를 사용할 수도 있습니다.<p/>
-<img src="https://th.bing.com/th/id/OIP.hK8fHAWg6IErMHxDNthWIAHaE7?rs=1&pid=ImgDetMain" width="60%" style="margin-top: 10px; margin-bottom: 20px;"
-<p>
-사용자에게 문서를 제공 한다는 것 은 대상이 사용 할 수 있는 형식으로 문서를 변환하는 것을 의미합니다. Browsers, Firefox, Chrome 또는 Edge 는 컴퓨터 화면, 프로젝터 또는 프린터 등의 문서를 시각적으로 표시하도록 설계되었습니다.
-CSS 는 매우 기본적인 텍스트 문서 스타일링에 사용될 수 있습니다 — 예를 들어, 제목 및 링크의 색상과 크기 변경. 또한, 레이아웃을 만드는 데 사용 할 수 있습니다 — 예를 들어, 단일 텍스트 열을 변환 (기본 콘텐츠 영역과 관련 정보에 대한 사이드 바가 있는 레이아웃으로) 하는 등 레이아웃을 만드는 데 사용 할 수 있습니다. 애니메이션 과 같은 효과에도 사용 할 수 있습니다. 구체적인 예는 이 단락의 링크를 살펴보세요.
-      </p>
+문서는 일반적으로 마크 업 언어를 사용하여 구성된 텍스트 파일입니다 — HTML 이 가장 일반적인 마크 업 언어이지만, SVG 또는 XML 과 같은 다른 마크 업 언어를 사용할 수도 있습니다.</p>
+<img src="https://th.bing.com/th/id/OIP.hK8fHAWg6IErMHxDNthWIAHaE7?rs=1&pid=ImgDetMain" width="60%" style="margin-top: 10px; margin-bottom: 20px;">
+
+<p>사용자에게 문서를 제공 한다는 것 은 대상이 사용 할 수 있는 형식으로 문서를 변환하는 것을 의미합니다. Browsers, Firefox, Chrome 또는 Edge 는 컴퓨터 화면, 프로젝터 또는 프린터 등의 문서를 시각적으로 표시하도록 설계되었습니다.
+CSS 는 매우 기본적인 텍스트 문서 스타일링에 사용될 수 있습니다 — 예를 들어, 제목 및 링크의 색상과 크기 변경. 또한, 레이아웃을 만드는 데 사용 할 수 있습니다 — 예를 들어, 단일 텍스트 열을 변환 (기본 콘텐츠 영역과 관련 정보에 대한 사이드 바가 있는 레이아웃으로) 하는 등 레이아웃을 만드는 데 사용 할 수 있습니다. 애니메이션 과 같은 효과에도 사용 할 수 있습니다. 구체적인 예는 이 단락의 링크를 살펴보세요.</p>
+      
     </body>
-    <!-- <table>
-  <tr>
-    <td>head</td>
-    <td>98.1%</td>
-  </tr>
-  <tr>
-    <td>body</td>
-    <td>97.9%</td>
-  </tr>
-</table> -->
   </html>
 </!DOCTYPE>
