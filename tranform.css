@@ -1,0 +1,5 @@
+/* chrome 브라우저에서만 실행 */
+fransform : rotate(180deg);
+
+/* safari, opera 등 다른 브라우저에서도 실행 */
+-webket-transfrom : rotate(180deg);

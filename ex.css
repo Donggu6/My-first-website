@@ -1,0 +1,19 @@
+h1,
+h2 {
+  color: green;
+  font-family: "휴먼편지체";
+  font-size: 25pt;
+}
+strong,
+em {
+  color: orange;
+  font-family: "궁서체";
+  font-size: 15pt;
+  font-style: italic;
+}
+li {
+  font-family: "휴먼매직체";
+  font-size: 18pt;
+  font-weight: bold;
+  color: red;
+}

@@ -1,0 +1,6 @@
+body em{
+    color: red;
+}
+body > h1{
+    color: blue;
+}

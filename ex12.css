@@ -1,0 +1,18 @@
+#page1{
+    background-image: url(../image/coding.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 150px 150px;
+    background-color: #ddffe5;
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+    a:link{color: rgb(196, 81, 81);}
+    a:visited{color: green;}
+    a:hover{color: rgb(0, 132, 255);}
+    a:active{color: yellow;}
+
+    

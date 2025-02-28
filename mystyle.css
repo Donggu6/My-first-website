@@ -1,0 +1,16 @@
+#h1 {
+  color: red;
+}
+
+#h1_color {
+  color: blue;
+  background-color: rgb(180, 213, 219);
+}
+#special{
+    background-color: yellow;
+    color: red;
+}
+.type1{
+    background-color: yellow;
+    color: red;
+}

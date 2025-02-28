@@ -1,0 +1,9 @@
+/* .div{border: 1px solid red; text-align: center; padding: 15px 0px; margin: 5px 0px;}
+#div1{background-color: lightgreen;}
+#div2{background-color: #ffaeee;}
+#div3{background-color: rgb(98,115,110);color: white;} */
+.div{border: 1px solid red; text-align: center; padding: 20px 0px; margin: 5px 0px;}
+#div1{background-color: lightgreen;}
+#div2{background-color: #ffaeee;}
+#div3{background-color: green;}
+div:hover{text-shadow: 1px 1px 3px red;}
