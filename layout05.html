@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정적 위치 선정</title>
+    <style>
+        #one{
+            background-color: cyan;
+            width: 200px;
+            height: 50px;
+        }
+        
+        #two{
+            position: static;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+        /* 상대 위치 설정 */
+        /* #two{
+            position: relative;
+            left: 30px;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        } */
+         /* 절대 위치 선정 */
+         /* #two{
+            position: absolute;
+            웹창 기준 
+            top: 30px;
+            left: 30px;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+         }*/
+        #three{
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <p id="one">block #1</p>
+    <div id="two">
+      block #2<br />
+      position:stactic;<br />
+    </div>
+    <p id="three">block #3</p>
+  </body>
+</html>

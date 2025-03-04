@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* input 태그는 inline */
+      /* p는 block */
+      input{border: none; width: 100%}
+      .inputstyle {
+        padding: 10px;
+        margin: 10px 0px;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 6px 6px 6px #cccccc, -6px -6px 6px white;
+      }
+      #btnstyle{
+        background-color: skyblue;
+        text-align: center;
+      }
+      input[type=submit]{
+        background-color: skyblue;
+        color: white;
+      }
+      p{margin: 8px;}
+    </style>
+  </head>
+  <body>
+    <div><p>EMAIL</p></div>
+    <div class="inputstyle">
+      <input type="text"/>
+    </div>
+    <div><p>PASSWORD</p></div>
+    <div class="inputstyle"><input type="text" /></div>
+    <div class="inputstyle" id="btnstyle"><input type="submit" value="LOGIN"/> </div>
+  </body>
+</html>

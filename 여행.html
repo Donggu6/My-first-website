@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행 사진 갤러리</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #2c3e50;
+            padding: 20px;
+            background-color: #3498db;
+            margin: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery div {
+            position: relative;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>나의 여행 사진 갤러리</h1>
+
+    <div class="gallery">
+        <div>
+            <img src="../image/서울.jfif" alt="여행지 1">
+            <div class="caption">서울, 한국</div>
+        </div>
+        <div>
+            <img src="../image/파리.jpg" alt="여행지 2">
+            <div class="caption">파리, 프랑스</div>
+        </div>
+        <div>
+            <img src="../image/도쿄.jfif" alt="여행지 3">
+            <div class="caption">도쿄, 일본</div>
+        </div>
+        <div>
+            <img src="../image/뉴욕.jfif" alt="여행지 4">
+            <div class="caption">뉴욕, 미국</div>
+        </div>
+        <div>
+            <img src="../image/로마.jfif" alt="여행지 5">
+            <div class="caption">로마, 이탈리아</div>
+        </div>
+        <div>
+            <img src="../image/시드니.jfif" alt="여행지 6">
+            <div class="caption">시드니, 호주</div>
+        </div>
+    </div>
+
+    <footer>
+        <p <a href="https://www.google.com/search?q=%EC%8B%9C%EB%93%9C%EB%8B%88&sca_esv=ed9c7b2690579ad7&sxsrf=AHTn8zr1zc2dHXtjfpAsj2AX4S1ZyRg0bA%3A1740459613299&ei=XU69Z9vkEdW10-kPu7zmuAQ&ved=0ahUKEwibh_ynhd6LAxXV2jQHHTueGUcQ4dUDCBA&uact=5&oq=%EC%8B%9C%EB%93%9C%EB%8B%88&gs_lp=Egxnd3Mtd2l6LXNlcnAiCeyLnOuTnOuLiDIKEC4YgAQYQxiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgoQABiABBhDGIoFMgUQLhiABDILEC4YgAQYxwEYrwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAuGIAESPw4UJEhWJE0cAR4AZABAZgBkgGgAZMGqgEDMC42uAEDyAEA-AEBmAIHoALSA6gCCsICBxAjGCcY6gLCAg0QLhjRAxjHARgnGOoCwgIHEC4YJxjqAsICBBAAGAPCAhEQLhiABBixAxjRAxiDARjHAcICCxAuGIAEGLEDGIMBmAMD8QX8_SOShyHyBpIHAzQuM6AHn1Q&sclient=gws-wiz-serp">여행을 떠나고 싶은 곳들!</a>여행을 떠나고 싶은 곳들!</p>
+    </footer>
+
+</body>
+</html>

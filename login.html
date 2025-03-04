@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- <!-- <input> 형식 -->
+    <p>
+      type 속성은 입력 필드의 종류를 결정한다. <입력 요소의 유형(type)이다.
+      value 속성은 버튼에 나타내는 택스트이다. <입력 요소의 초기값이다. 입력
+      요소에 따라서 사용자가 변경할 수도 있다. name 속성은 서버로 전달되는
+      이름이다. <입력 요소의 이름이며 서버의 변수의 이름처럼 전달된다.
+    </p>
+
+    <form action="input.jsp" method="get" target="_blank">
+      이메일: <input type="email" name="email" required /><br />
+      URL: <input type="url" name="url" /><br />
+      전화번호: <input type="tel" name="tel" /><br />
+      색상: <input type="text" name="text" /><br />
+      월:<input type="month" name="month" /><br />
+      날짜:<input type="date" name="date" /><br />
+      주:<input type="week" name="month" /><br />
+      시간:<input type="time" name="time" /><br />
+      지역 시간:<input type="datetime-local" name="datetime-local" /><br />
+      숫자:<input type="number" name="number" min="1" max="10" step="2" /><br />
+      범위:<input type="range" name="range" min="1" max="11" step="2" /><br />
+      <input type="submit" value="[제출]" />
+    </form>
+
+    <!-- 택스트 입력 ↡ -->
+
+    <h2>고객의 소리</h2>
+    <form name="input" action="gerfeedback.jsp" method="get">
+      아이디: <input type="text" name="name" /><br />
+      구매번호: <input type="text" name="number" size="10" /><br />
+      패스워드: <input type="password" name="pass" /><br />
+      제품을 평가해주세요.<br />
+      <textarea name="feedback" rows="5" cols="50"> </textarea>
+    </form>
+
+    <!-- 체크 박스와 라디오 버튼 사용 ↡ -->
+    <h2>선호도 조사입니다.</h2>
+    <form>
+      성별:
+      <input type="radio" name="gender" value="mail" />남성
+      <input type="radio" name="gender" value="mail" />여성<br />
+      과일 선택:
+      <input type="checkbox" name="fruits" value="apple" />사과
+      <input type="checkbox" name="fruits" value="grape" />포도
+      <input type="checkbox" name="fruits" value="orange" />오렌지
+    </form>
+
+    <!-- 제출 버튼과 초기화 버튼 ↡ -->
+    <form name="input" action="Login.jsp" method="get">
+      아이디: <input type="text" name="user" /><br />
+      패스워드: <input type="password" name="pass" /><br />
+      <input type="submit" value="제출" />
+      <input type="reset" value="초기화" />
+    </form>
+    <from>
+      <!-- <input type="button" ↡ -->
+      <input type="button" value="눌러보세요" onclick="alert('안녕하세요?')"
+    </from>
+
+    <!-- <button> 요소 -->
+    <form target="_blank">
+      <a
+        href="https://blog.naver.com/hungry_wombat/223651677809"
+        target="_blank"
+        ><button type="button">
+          <img src="../image/카피바라.jfif" />카피바라
+        </button></a
+      >
+      <a href="https://blog.naver.com/cmdrks454/223729100552" target="_blank"
+        ><button type="button">
+          <img src="../image/호랑이.jfif" />호랑이
+        </button></a
+      >
+      <a href="https://blog.naver.com/j3y1988/223669627104" target="_blank"
+        ><button type="button"><img src="../image/표범.jfif" />표범</button></a
+      >
+    </form>
+  </body>
+  <body>
+    <!-- <select> 요소 -->
+    <form action="">
+      <select name="cars">
+        <option value="bmw">BMW</option>
+        <option value="benz">Benz</option>
+        <option value="hyundai">현대자동차</option>
+        <option value="kia">가아자동차</option>
+      </select>
+    </form>
+    <p>선호하는 브라우저를 선택해주세요</p>
+    <form action="process.jsp">
+      <input list="browsers" name="browsers" />
+      <datalist id="browsers">
+        <option value="구글 크롬"></option>
+        <option value="엣지"></option>
+        <option value="오페라"></option>
+        <option value="사파리"></option>
+        <option value="파이어폭스"></option>
+      </datalist>
+      <input type="submit" />
+    </form>
+    <form>
+      <fieldset>
+        <legend>인적사항입력</legend>
+        이름: <input type="text" /><br />
+        전화번호:<input type="number" /><br />
+        주소: <input type="text" />
+      </fieldset>
+    </form>
+    <form action="proc_from.jsp">
+      <label for="mail">남성</label>
+      <input type="radio" name="gender" id="mail" value="mail" /><br />
+      <label for="female">여성</label>
+      <input type="radio" name="gender" id="female" value="female" /><br />
+      <input type="submit" value="제출" />
+    </form>
+    <form enctype="multipart/form-data">
+      <input type="file" accept="image/jpg,image/gif" />
+    </form>
+  </body>
+</html>

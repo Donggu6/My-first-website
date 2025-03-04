@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* a:link 방문한 상태, a:visitexd 방문하지 않은상태*/
+      a:link,
+      a:visited {
+        /*
+        a 태그는 기본적으로 inline
+        display:block
+        inline -> block;
+        */
+        display: block;
+        width: 200px;
+        margin-top: 10px;
+        border: 2px solid green;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+      }
+      a:hover{background-color: green; color: white;}
+    </style>
+  </head>
+  <body>
+    <a href="#">This is a Hyper Link.</a>
+  </body>
+</html>
